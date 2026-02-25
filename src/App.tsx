@@ -75,7 +75,7 @@ function App() {
       <div>
         <img src={logo} className="logo" alt="Logo" />
       </div>
-      <h1>NYC Subway Strip Map Maker</h1>
+      <h1>NYC Subway Strip Map Generator </h1>
 
       <div>
         <form onSubmit={handleGenerate}>
