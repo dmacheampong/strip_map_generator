@@ -57,8 +57,9 @@ export function StripMap({ ref, name, color, bulletText, bulletTextColor, statio
 
         <g transform={`translate(${contentWidth / 12}, ${contentHeight / 2})`}>
           {boroughs.slice(0, -1).map((borough) => (
-            <line key={borough.id} x1={borough.pos * spaceBetween - spaceBetween / 2} x2={borough.pos * spaceBetween - spaceBetween / 2} y1={-contentHeight / 5} y2={contentHeight} stroke="rgba(0, 0, 0, 0.25)" strokeWidth={3} />
+            <line key={borough.id} x1={borough.pos * spaceBetween - spaceBetween / 2} x2={borough.pos * spaceBetween - spaceBetween / 2} y1={-contentHeight / 5} y2={contentHeight / 2} stroke="rgba(0, 0, 0, 0.25)" strokeWidth={3} />
           ))}
+
           <Line length={lineLength} color={color} stations={stationsDict} bulletTextColor={bulletTextColor} spaceBetween={spaceBetween} strokeWidth={5} />
           {boroughs.slice(0, -1).map((borough) => (
             <g key={borough.id} >
